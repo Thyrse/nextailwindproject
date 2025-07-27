@@ -1,0 +1,2 @@
+# nextailwindproject
+Project NextJS + Tailwind
