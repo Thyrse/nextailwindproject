@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-montserrat: var(--font-montserrat);
+}
+
+@theme {
+  --color-primary: #0C4E8C;
+  --color-secondary: #11C4D4;
+  --color-tertiary: #D9FAFD;
+  --color-black: #1C1C31;
+  --color-white: #FFFFFF;
+  --color-grey: #E5E5E8;
+  --color-darkGrey: #7D7D86;
+  --color-lightGrey: #F9F9FA;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.radio-simple {
+  @apply border-grey text-black;
+}
+
+.radio-checked {
+  @apply bg-tertiary border-primary text-primary;
+}
